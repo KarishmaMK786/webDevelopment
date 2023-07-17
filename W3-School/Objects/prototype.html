@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        }
+
+       
+
+        const myFather = new Person("John", "Doe", 50, "blue");
+        
+        myFather.nationality = "English";
+        console.log(myFather);
+        console.log(Person.prototype);
+        console.log(myFather.__proto__);
+        console.log(Person.prototype.__proto__);
+        console.log(myFather.__proto__.__proto__);
+        console.log(Object.prototype);
+
+
+
+        
+
+
+        document.getElementById("demo").innerHTML =
+        "The nationality of my father is " + myFather.nationality; 
+    </script>
+    
+</body>
+</html>

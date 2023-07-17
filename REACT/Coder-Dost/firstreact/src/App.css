@@ -1,0 +1,14 @@
+.App {
+  background-color: #c3bebe;
+  width: 100%;
+  height: 100vh;
+}
+
+#addvideo{
+  width: 10%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+

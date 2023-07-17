@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+   
+    <div class="heading">
+        <h1 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Weather App</h1>
+    </div>
+    <div class="box">
+        
+        <div id="container">
+            <input type="text" id="city" placeholder="Enter city name" />
+            <button onclick="getWeather()">Submit</button>
+            <div class="data">
+                <div class="icon"></div>
+                <div id="appendData">
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe  width="600" height="500" id="gmap_canvas"
+                     frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://123movies-to.org"></a><br />
+                <a href="https://www.embedgooglemap.net"></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

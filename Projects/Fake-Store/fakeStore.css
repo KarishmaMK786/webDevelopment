@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px 10px;
+   
+}
+#container div{
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+
+img{
+    width: 30%;
+    height: 150px;
+}
+p:last-child{
+    color: rgb(225, 35, 206);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 30%;
+    margin: 10px auto;
+}
+
+button{
+    margin: 20px 20px;
+    padding: 5px;
+    width: 5%;
+    background-color: rgb(237, 188, 236);
+    border-radius: 5px;
+    border: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search div{
+    display: flex;
+    width: 30%;
+}
+.search button{
+    width: 25%;
+}
+input{
+    border: 2px solid pink;
+    border-radius: 5px;
+    width: 25%;
+    height: 25px;
+}
